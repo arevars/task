@@ -7,7 +7,6 @@ import springboot1.task.model.User;
 import springboot1.task.repository.UserRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UserDAO {

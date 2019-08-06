@@ -17,15 +17,39 @@ public class User {
     private String name;
 
     @NotBlank
-    private String designation;
+    private String surname;
 
     @NotBlank
-    private String expertise;
+    private String email;
 
 
     @Temporal(TemporalType.TIMESTAMP)
     @LastModifiedDate
     private Date createdAt;
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
+    }
 
     public Long getId() {
         return id;
@@ -43,28 +67,6 @@ public class User {
         this.name = name;
     }
 
-    public String getDesignation() {
-        return designation;
-    }
 
-    public void setDesignation(String designation) {
-        this.designation = designation;
-    }
-
-    public String getExpertise() {
-        return expertise;
-    }
-
-    public void setExpertise(String expertise) {
-        this.expertise = expertise;
-    }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
-    }
 
 }

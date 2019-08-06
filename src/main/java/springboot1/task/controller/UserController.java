@@ -52,8 +52,8 @@ public class UserController {
         }
 
         user.setName(userDetails.getName());
-        user.setDesignation(userDetails.getDesignation());
-        user.setExpertise(userDetails.getExpertise());
+        user.setSurname(userDetails.getSurname());
+        user.setEmail(userDetails.getEmail());
 
         User updateUser=userDAO.save(user);
         return ResponseEntity.ok().body(updateUser);
